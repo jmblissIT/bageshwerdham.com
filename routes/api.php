@@ -37,4 +37,24 @@ Route::get('blogs/{id}', "App\Http\Controllers\BlogController@get_blogs_byID");
 //For Get All Main Services on HomePage
 Route::get('main_services',"App\Http\Controllers\BlogController@get_main_services");
 
+//For Get Main Services By ID
+Route::get('services/{id}', "App\Http\Controllers\BlogController@get_service_byID");
+
+//For Get Contact Page Details
+Route::get('contacts', "App\Http\Controllers\BlogController@contact");
+
+//For Get Audio Main Title
+Route::get('audios', "App\Http\Controllers\BlogController@get_audio_title");
+
+//For Get Audio Main Title
+Route::get('audio_years/{id}', "App\Http\Controllers\BlogController@get_audio_year");
+
+//For Get Audio File By Using Title and Year
+Route::get('audio_files/{id}', "App\Http\Controllers\BlogController@get_audio_file");
+
+
+
+
+
+
 
